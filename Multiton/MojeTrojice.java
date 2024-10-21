@@ -3,6 +3,8 @@
 //A je cokoliv, ale musi to umet CompareTo => Mohu delat ty trojice jen z toho co to umi
 //Musel buch user profilu pridat metodu compareTo
 //comaparable je taky genericky typ
+package Multiton;
+
 public class MojeTrojice<A extends Comparable<A>> {
     private A arg1;
     private A arg2;
@@ -60,4 +62,3 @@ public class MojeTrojice<A extends Comparable<A>> {
 
     }
 }
-package Multiton;
