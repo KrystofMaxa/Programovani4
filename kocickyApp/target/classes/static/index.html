@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kočičí ráj</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #f3e5f5, #ede7f6);
+    color: #333;
+}
+
+header {
+    background: #6200ea;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    margin: 0 15px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #ffcc80;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+video {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #6200ea;
+    color: white;
+    margin-top: 20px;
+}
+
+</style>
+<body>
+<header>
+    <nav class="nav">
+        <ul>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#gallery">Galerie</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="video">
+        <h1>Vítejte v Kočičím ráji!</h1>
+        <video autoplay muted loop>
+            <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+            Váš prohlížeč nepodporuje video.
+        </video>
+    </section>
+
+    <section id="gallery">
+        <h2>Galerie krásných kočiček</h2>
+        <div class="gallery">
+            <img src="https://www.shutterstock.com/image-photo/beautiful-wonderful-cute-kitten-wallpaper-600nw-2435308283.jpg" alt="Roztomilá kočička">
+            <img src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3V0ZSUyMGNhdHxlbnwwfHwwfHx8MA%3D%3D" alt="Kočička odpočívá">
+            <img src="https://images.ctfassets.net/ub3bwfd53mwy/5zi8myLobtihb1cWl3tj8L/45a40e66765f26beddf7eeee29f74723/6_Image.jpg?w=750" alt="Kočička v zahradě">
+        </div>
+    </section>
+</main>
+
+<footer id="contact">
+    <p>Kontaktujte nás na: <a href="mailto:kocicky@priklad.cz">kocicky@priklad.cz</a></p>
+</footer>
+</body>
+</html>
